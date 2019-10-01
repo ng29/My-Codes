@@ -98,18 +98,19 @@ randomNums= "not "+numHolder[0]+"not "+numHolder[1]+"not "+numHolder[2]+" .";
 		
 		story="Priya and her best friend "+getName()+" went to Kingdom of Dreams today!.\n"
 				+ " They saw a "+ getNoun1()+" in a show at the Magic Kingdom.\n"
-				+" and ate a "+getAdjective1()+" feast for dinner. The next day 1\n"
+				+" and ate a "+getAdjective1()+" feast for dinner. The next day \n"
 				+" ran "+getAdverb()+" to meet the Mickey Mouse in his "+getNoun2()
 				+"\n and then that night I gazed at the "+getRandomNums()+" "
-				+getAdjective2()+"\n fireworksshooting from the "+getNoun3()+" .";
+				+getAdjective2()+"\n fireworks shooting from the "+ getNoun3()+" .";
 		// set this story to the property
 		}
 		else{
-			story= "Priya and her frenery "+ getName()+ " went to the zoo last summer.\n"
+			story= "Priya and her friend "+ getName()+ " went to the zoo last summer.\n"
 					+" They saw a huge "+getNoun1()+ " and a tiny little "+ getNoun2()+"\n. That night"
 					+" they decided to climb "+getAdverb()+" into the "+getNoun3()+" to get a closer look. "+
-					"The zoo was "+ getAdjective1()+" at night ,but they did'nt care \n"
-					+" until "+getRandomNums()+" "+ getAdjective2()+" apes yelled at their faces making Nitin and "+ getName()+" sprint all the way back home.\n";
+					"The zoo was "+ getAdjective1()+" at night, but they didn't care \n"
+					+" until "+getRandomNums()+" "+ getAdjective2()+" apes yelled at their faces making Priya and "
+					+ getName()+" sprint all the way back home.\n";
 		}
 		setStory(story);
 	}
