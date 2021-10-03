@@ -1,6 +1,6 @@
 # HACKTOBERFEST 2020
 
-![image](hacktoberfest2020.jpeg)
+![image](https://user-images.githubusercontent.com/43691873/135417244-f5a221ec-dc29-4687-a5f1-ae715727b6b0.png)
 
 ##### Star The Repository if it helped you in any direction.
 
