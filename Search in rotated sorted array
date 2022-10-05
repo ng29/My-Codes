@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+bool solve(vector<int> arr, int left, int right, int target)
+{
+   if (left > right)
+   {
+      return false;
+   }
+   int mid = (left + right)/2;
+   if (arr[mid] == target)
+   {
+      return true;
+   }
+   if (arr[left] <= arr[mid]) 
+   {
+      if (target >= arr[left] && target <= arr[mid])
+      {
+         return solve(arr, left, mid-1, target);
+      }
+      return solve(arr, mid+1, right, target);
+   }
+   if (target >= arr[mid] && target <= arr[right])
+      return solve(arr, mid+1, right, target);
+   return solve(arr, left, mid-1, target);
+}
+int main() 
+{
+   vector<int> arr = {5, 6, 7, 8, 2, 3, 4};
+   int target = 2;
+   if(solve(arr, 0, arr.size()-1, target)) 
+   {
+      cout << target << " is present";
+   }
+      else cout << target << " is not present";
+   return 0;
+}
