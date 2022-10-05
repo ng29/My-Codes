@@ -1,6 +1,6 @@
 # HACKTOBERFEST 2021
 
-![image](https://user-images.githubusercontent.com/43691873/135417244-f5a221ec-dc29-4687-a5f1-ae715727b6b0.png)
+![image](https://res.cloudinary.com/practicaldev/image/fetch/s--ds97LCK---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ymlmr15l83rrjq8natft.jpg)
 
 ##### Star The Repository if it helped you in any direction.
 
@@ -11,4 +11,4 @@ Everybody is welcomed to contribute to this repo.
 
 Includes SPOJ solutions and some questions for JoshTechnologiesGroup Internship and other topics such as LinkedLists and Tress.
 
-Everyone can Contribute to this repo by adding Data Structures and. Algorithms in order to count PR'S in HACKTOBERFEST 2021
+Everyone can Contribute to this repo by adding Data Structures and. Algorithms in order to count PR'S in HACKTOBERFEST 2022
