@@ -1,0 +1,48 @@
+class T
+{
+		synchronized public void callLoop(String n)
+		{
+			for(int i=0; i<=10; i++)
+			{	System.out.println(n+": "+i);
+				try{
+					Thread.sleep(400);
+					}
+				catch(Exception e)
+				{
+				System.out.println(e.getMessage());
+				}
+		    }
+		}		
+		
+}
+class Thread1 extends Thread{
+	T t;
+	Thread1(T t)
+	{
+		this.t=t;
+	}
+	public void run(){
+		t.callLoop(super.getName());
+	}
+}
+class Thread2 extends Thread{
+	T t;
+	Thread2(T t)
+	{
+		this.t=t;
+	}
+	public void run(){
+		t.callLoop(super.getName());
+	}	
+}
+
+class PrimeThread{
+	public static void main(String[] args) {
+		T t=new T();
+		Thread1 t1 = new Thread1(t);
+		Thread2 t2 = new Thread2(t);
+		t1.start();
+		t2.start();
+		
+	}
+}
