@@ -1,0 +1,30 @@
+import java.util.HashSet;
+
+public class Hashset {
+	//add, clear, clone(create new hashset), contains?, isEmpty? iterator, remove(index nahi, name), size
+  
+	public static void main(String args[]){
+		HashSet<String> obj= new HashSet<String>();
+		obj.add("k");
+		obj.add("f");
+		obj.add("k");
+		obj.add("f");
+		obj.add("s");
+		obj.add("o");
+		for(String e: obj){
+			System.out.println("Element: " + e);
+					}
+		boolean c= obj.contains("s");
+		if (c)
+			System.out.println("s is present");
+		boolean t=obj.isEmpty();
+		if(t==true)
+			System.out.println("Empty set");
+		else
+			System.out.println("Not Empty");		
+		obj.remove("o");
+		for(String e: obj){
+			System.out.println("Element: " + e);
+					}
+	}
+}
